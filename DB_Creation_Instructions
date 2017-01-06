@@ -1,0 +1,16 @@
+
+mysql -u root -p
+(insert mysql password)
+
+SHOW DATABASES;
+
+CREATE DATABASE indexdb;
+
+CREATE USER 'indexroot'@'localhost' IDENTIFIED BY 'index0';
+
+USE indexdb;
+
+GRANT ALL ON indexdb.* TO 'indexroot';
+
+quit;
+
